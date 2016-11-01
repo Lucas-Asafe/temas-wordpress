@@ -1,0 +1,1015 @@
+/*
+Theme Name: AD-Tema
+Theme URI: http://analiticsdev.systems
+Description: "Esse é um tema simples com design eficiente, intuítivo e responsivo"
+Author: Lucas Guimarães
+Author URI: ...
+Version: 1.0
+Tags: Red, slides e images
+.fil1 {fill:#E6E7E8} --> Cinza
+.fil2 {fill:#C74D4D} --> Vermelho Claro
+.fil0 {fill:#3E1010} --> Vermelho Escuro
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    border: none;
+}
+a img{
+    border: none;
+}
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #F1F1F1;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+@font-face {
+    font-family: AllerBold;
+    src: url("fonts/Aller_Bd.eot") /* EOT file for IE */
+}
+@font-face {
+    font-family: AllerBold;
+    src: url("fonts/Aller_Bd.ttf") /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+    font-family: AllerRegular;
+    src: url("fonts/allerregular.eot") /* EOT file for IE */
+}
+@font-face {
+    font-family: AllerRegular;
+    src: url("fonts/allerregular.ttf") /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+    font-family: dbold;
+    src: url("fonts/dinbold.eot") /* EOT file for IE */
+}
+@font-face {
+    font-family: dbold;
+    src: url("fonts/dinbold.ttf") /* TTF file for CSS3 browsers */
+}
+
+/* Início do Cabeçalho */
+#topo{
+    height: 175px;
+    width: 969px;
+    position: relative;
+    margin: 0 auto;
+}
+#logo{
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    background: url('img/logoVermelha.png') no-repeat;
+    width: 322px;
+    height: 112px;
+}
+#sociais{
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    height: auto;
+    width: auto;
+}
+#sociais svg{
+    width: 50px;
+    height: 50px;
+}
+#sociais svg path{
+    fill: #C74D4D;
+    fill-opacity: 1;
+    stroke-width: 0.2px;
+    stroke-linejoin: round;
+}
+#sociais svg:hover path{
+    fill: #3E1010;
+}
+#menu{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+ul#menu{
+    width: auto;
+}
+#menu ul li{
+    display: block;
+    float: left;
+    position: relative;
+}
+#menu ul li ul{
+    display: none;
+}
+#menu ul li:hover ul{
+    display: inline;
+    position: absolute;
+    top: 33px;
+    left: 0;
+    z-index: 999;
+}
+#menu ul li a{
+    font: 12px AllerBold;
+    float: left;
+    color: #FFFFFF;
+    text-align: center;
+    background: #393939;
+    display: block;
+    min-width: 74px;
+    width: 74px;
+    max-width: 170px;
+    overflow: hidden;
+    width: auto;
+    height: 33px;
+    line-height: 33px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -ms-border-top-left-radius: 5px;
+    -ms-border-top-right-radius: 5px;
+    margin-left: 3px;
+    padding: 0 5px;
+}
+#menu ul li ul li a{
+    border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    width: 150px !important;
+    text-align: left !important;
+    padding-left: 15px !important;
+}
+#menu ul li ul li a:hover{
+    box-shadow: 0 1px 16px #333333;
+    -moz-box-shadow: 0 1px 16px #333333;
+    -webkit-box-shadow: 0 1px 16px #333333;
+    -ms-box-shadow: 0 1px 16px #333333;
+    border-bottom: 2px solid #FFFFFF;
+}
+#menu ul li a:hover{
+    background: #C74D4D !important;
+}
+.menu_ativo{
+    background: #C74D4D !important; 
+}
+#destaque{
+    width: 100%;
+    height: 204px;
+    background: rgb(199,77,77); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(199,77,77,1) 0%, rgba(62,16,16,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(199,77,77,1) 0%,rgba(62,16,16,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(199,77,77,1) 0%,rgba(62,16,16,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c74d4d', endColorstr='#3e1010',GradientType=0 ); /* IE6-9 */ 
+}
+.agrupar{
+    width: 969px;
+    position: relative;
+    margin: 0 auto;
+}
+.thumbnail{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0 1px 20px #333333;
+    -moz-box-shadow: 0 1px 20px #333333;
+    -webkit-box-shadow: 0 1px 20px #333333;
+    -ms-box-shadow: 0 1px 20px #333333;
+}
+.titulo{
+    width: 540px;
+    position: absolute;
+    right: 0px;
+    top: 28px;
+}
+.titulo a{
+    font: 32px AllerBold;
+    color: #FFFFFF;
+}
+.titulo a:hover{
+    text-decoration: underline;
+}
+.autor{
+    width: 256px;
+    position: absolute;
+    top: 120px;
+    right: 280px;
+}
+.autor div{
+    float: left;
+}
+.img_autor{
+    width: 49px;
+    height: 49px;
+    margin-right: 10px;
+}
+.info_autor{
+    font: 14px Georgia;
+    color: #FFFFFF;
+    width: 197px;
+}
+.big{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+}
+.big a{
+    text-decoration: none;
+    color: white;
+}
+.italico{
+    font-style: italic;
+}
+.italico a{
+    text-decoration: none;
+    color: white;
+}
+.controles{
+    position: absolute;
+    right: 0px;
+    top: 140px;
+}
+.controles ul li{
+    margin-left: 20px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    cursor: pointer;
+    float: left;
+}
+.slide_post_2, .slide_post_3, .slide_post_4{
+    display: none;
+}
+#busca{
+    height: 45px;
+    width: 100%;
+    background: rgb(230,230,230); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(190,190,190,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(230,230,230,1) 0%,rgba(190,190,190,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(230,230,230,1) 0%,rgba(190,190,190,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DDDDDD', endColorstr='#AAAAAA',GradientType=0 ); /* IE6-9 */ 
+}
+.form{
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    width: 300px;
+    height: 25px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -ms-border-radius: 30px;
+}
+.form input[type=text]{
+    border: none;
+    font: 13px AllerBold;
+    color: #393939;
+    width: 188px;
+}
+.form input[type=submit]{
+    border: none;
+    width: 70px;
+    height: 20px;
+    background: #BBBBBB;
+    font: 12px AllerBold;
+    color: #FFFFFF;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.form input[type=submit]:hover{
+    background: #C74D4D;
+}
+.form input[type=submit]:hover, .form input[type=submit]{
+    transition: all 2s linear;
+    -moz-transition: all 2s linear;
+    -webkit-transition: all 2s linear;
+    -ms-transition: all 2s linear;
+}
+.magnify{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+}
+.magnify path{
+    fill: #777777;
+    fill-opacity: 1;
+    stroke-width: 0.2px;
+    stroke-linejoin: round;
+}
+.input{
+    position: relative;
+    left: 40px;
+    top: 2px;
+}
+.buscando{
+    padding: 7px;
+    border: 1px dashed #F1F1F1;
+    margin: 5px 0;
+}
+.buscando span{
+    color: #C74D4D;
+}
+/* Fim do Cabeçalho */
+
+/* Início dos Posts */
+#conteudo{
+    margin: 0 auto;
+    width: 986px;
+    margin-top: 20px;
+}
+#content{
+    width: 675px;
+    float: left;
+}
+.post{
+    margin-bottom: 20px;
+}
+.header_post{
+    width: 674px;
+    height: 82px;
+    background: #E3E3E3;
+}
+.info_autor_post{
+    font: 14px Georgia;
+    width: 550px;
+    height: 49px;
+}
+.info_autor_post span.big a{
+    color: #000000;
+}
+.info_autor_post span.link_categoria a{
+    color: #C74D4D;
+    font: 16px AllerBold;
+}
+.content_post{
+    width: 615px;
+    margin: 10px 0 0 17px;
+}
+.thumb_post{
+    width: 615px;
+    height: 334px;
+    text-align: center;
+    background-color: #F1F1F1;
+}
+.thumb_post img{
+    width: 615px;
+    height: 334px;
+}
+.tags{
+    width: 615px;
+    margin-top: 5px;
+    font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.tags a{
+    padding: 5px;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: #333333 ; 
+    font: bold 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 2px;
+    -webkit-border-top-left-radius: 5px; 
+    -webkit-border-top-right-radius: 2px;
+    -moz-border-top-left-radius: 5px; 
+    -moz-border-top-right-radius: 2px;
+}
+.tx_post{
+    color: #232323;
+    font: 14px Georgia;
+    margin: 30px 0 33px 0;
+    height: auto;
+    overflow: hidden;
+    max-height: 1000px;
+    clear: both;
+}
+.tx_post ul li{
+    list-style: disc;
+    list-style-position: inside;
+}
+.tx_post ol li{
+    list-style: decimal;
+    list-style-position: inside;
+}
+.tx_post blockquote{
+    padding: 5px 0 5px 15px;
+    font: italic bold 15px Georgia;
+}
+.tx_post p a{
+    color: #C74D4D;
+}
+.tx_post a img{
+    border: 4px solid #F1F1F1;
+    max-width: 615px;
+    max-height: 334px;
+}
+.tx_post a:hover img{
+    border: 4px solid #CCCCCC;
+    box-shadow: 0 1px 16px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 16px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 1px 16px rgba(0,0,0,0.5);
+}
+.tx_post a img, .tx_post a:hover img{
+   transition: all 2s linear;
+   -webkit-transition: all 2s linear;
+   -moz-transition: all 2s linear;
+}
+.tx_post img{
+    border: 4px solid #F1F1F1;
+    max-width: 615px;
+    max-height: 334px;
+}
+.more-link{
+    display: block;
+    width: 615px;
+    text-align: right;
+    margin-top: 10px;
+    color: #C74D4D;
+    font: 20px AllerBold;
+}
+#paginacao{
+    width: 674px;
+    font: italic bold 18px Georgia;
+    color: #888888;
+    margin: 10px 15px 45px 0;
+    text-align: right;
+}
+.paginas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.paginas a{
+    color: #888888;
+}
+.paginas a:hover{
+    color: #000000;
+}
+#subir{
+    width: 674px;
+    height: 25px;
+    margin: 0 15px 30px 0;
+    text-align: right;
+}
+#subir a{
+    font: 12px AllerBold;
+    color: #A6ABAE;
+    width: 120px;
+    height: 25px;
+    text-align: right;
+    line-height: 25px;
+    float: right;
+}
+#subir a svg{
+    width:32px;
+    height:32px; 
+}
+#subir a svg path{
+    fill:#A6ABAE; 
+    fill-opacity:1; 
+    stroke-width:0.2px;
+    stroke-linejoin:round;
+}
+/* Fim dos Posts */
+
+/* Início dos Comentários */
+#comentarios_template{
+    background-color: #F1F1F1;
+    padding: 5px;
+    font: 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+h3#comments, h3#reply-title.comment-reply-title{
+    font: 18px AllerBold;
+    color: #232323;
+}
+#comentarios_template ol li ul{
+    margin-left: 50px;
+}
+#comentarios_template ol li ul li{
+    border: 1px solid #CCCCCC;
+}
+.comment-body{
+    border: 1px solid #CCCCCC;
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+}
+.comment-meta{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+div.comment-body p{
+    background-color: #FFFFFF;
+    padding: 5px;
+    border: thin dashed #CCCCCC;
+    word-wrap: break-word;
+}
+#comentarios_template a{
+    color: #3E1010;
+    font-weight: bold;
+}
+#respond input[type=text]{
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC ;
+    padding: 3px;
+    height: 25px;
+    font: bold 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #232323;
+}
+#respond input[type=submit], #submit{
+    border: 1px solid #C74D4D;
+    background-color: #C74D4D;
+    padding: 7px;
+    height: 30px;
+    width: 140px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font: bold 12px AllerBold;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -ms-border-radius: 6px;
+}
+.comment-awaiting-moderation{
+    color: red;
+}
+.comment-form p{
+    margin-top: 5px;
+}
+#email, #url, #comment, #submit, #author, #respond h3 {
+    margin-left: 20px;
+}
+#comentarios_template div.navigation{
+    width: 100%;
+    float: left;
+    clear: both;
+}
+/* Fim dos Comentários */
+
+/* Início da sidebar */
+#sidebar{
+    width: 286px;
+    height: 300px;
+    float: right;
+    margin: 25px 0;
+}
+#sidebar div{
+    width: 286px;
+}
+#facebook, #twitter{
+    height: 50px;
+    border-radius: 5px;
+    font: 14px Georgia;
+    color: floralwhite;
+    cursor: pointer;
+}
+#facebook{
+    background-color: RGBA(7,45,81,255);
+}
+#facebook:hover{
+    background-color: RGBA(7,120,160,255);
+}
+#facebook:active{
+    background-color: RGBA(7,45,81,255);
+}
+#facebook:active, #twitter:active{
+    margin: 2px 2px 2px 2px;
+    width: 284px;
+    height: 48px;
+}
+#facebook svg, #twitter svg{
+    width: 40px;
+    height: 40px;
+}
+#facebook svg{
+    margin: 3px 0 0 5px;
+}
+#facebook svg path, #twitter svg path{
+    fill: floralwhite;
+    fill-opacity: 1;
+    stroke-width: 0.2px;
+    stroke-linejoin: round;
+}
+#twitter{
+    margin-top: 5px;
+    background-color: RGBA(70,180,180,255);
+}
+#twitter:hover{
+    background-color: RGBA(95,210,250,255);
+}
+#twitter:active{
+    margin: 7px 0 0 2px;
+    background-color: RGBA(70,180,180,255);
+}
+#twitter svg{
+    margin: 3px 0 0 10px;
+}
+#box-facebook{
+    height: 317px;
+}
+#box-twitter{
+    height: 366px;
+}
+/* Fim da sidebar */
+
+/* Classes */
+.centralizar{
+    width: 968px;
+    margin: 0 auto;
+}
+.s_top{
+    margin-top: 13px;
+}
+.box-widget{
+    background-color: #B3B3B3;
+    font: 14px AllerBold;
+    color: #777B85;
+}
+.t_box svg{
+    width:290px;
+    height:50px;
+    shape-rendering:geometricPrecision;
+    text-rendering:geometricPrecision;
+    image-rendering:optimizeQuality;
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+}
+.t_box svg svg text{
+    font: 14px AllerBold;
+    fill: #777B85;
+}
+.t_box svg svg{
+    position: absolute;
+}
+.t_box svg path{
+    fill:#E3E3E3;
+    fill-opacity: 1;
+    stroke-width: 0.2px;
+    stroke-linejoin: round;
+}
+.widget{
+    font: 14px AllerBold;
+    color: #232323;
+    margin: 20px 0 5px 0;
+}
+.widget a{
+    color: #C74D4D;
+}
+.widget form{
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -ms-border-radius: 0;
+}
+.widget input[type=text]{
+    font: 1em AllerBold;
+    width: 70%;
+    padding: 5px;
+}
+.widget input[type=submit]{
+    border: none;
+    width: 25.1%;
+    height: 30px;
+    background: #C74D4D;
+    font: 1em AllerBold;
+    color: #FFFFFF;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 5px;
+}
+.widget input[type=submit]:hover{
+    background: #7b1313;
+}
+.widget input[type=submit]:hover, .widget input[type=submit]{
+    transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+}
+.widget .magnify{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+}
+.widget .magnify path{
+    fill: #777777;
+    fill-opacity: 1;
+    stroke-width: 0.2px;
+    stroke-linejoin: round;
+}
+.tarja{
+    height: 9px;
+    width: 615px;
+    background-color: #C74D4D;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.p_left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.p_right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.pb_right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.linha{
+    height: 1px;
+    background: #BBBBBB;
+    clear: both;
+}
+.r_linha{
+    width: 100%;
+    height: 1px;
+    background: #101010;
+    clear: both;
+    box-shadow: 1px 1px 1px #707070;
+    border-radius: 1px;
+}
+.linha hr{
+    display: none;
+}
+.cinza_claro{
+    color: #B4B4B4 !important;
+}
+.cinza_medio{
+    color: #707070 !important;
+}
+.contraste{
+    color: #C74D4D !important;
+}
+.relative{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.n_comentarios .comment{
+    width:32px;
+    height:32px;
+    position: absolute;
+    bottom: 10px;
+    left: 34px;
+}
+.n_comentarios .comment text a{
+    font: italic bold 12px Georgia;
+    fill: #FFFFFF;
+}
+.n_comentarios .comment path{
+    fill:#393939;
+    fill-opacity: 1;
+    stroke-width: 0.2px;
+    stroke-linejoin: round;
+}
+.compartilhar{
+    width: 320px;
+    height: 20px;
+    position: absolute;
+    right: 27px;
+    bottom: 15px;
+}
+.compartilhar a svg{
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-left: 10px;
+}
+.compartilhar a svg path{
+    fill: #C74D4D;
+    fill-opacity: 1;
+    stroke-width: 0.2px;
+    stroke-linejoin: round;
+}
+.compartilhar a svg:hover path{
+    fill: #3E1010;
+}
+.agrupa_post{
+    width: 649px;
+    margin-left: 15px;
+    border: 1px solid #E3E3E3;
+}
+.t_post a, #content h1 a{
+    width: 618px;
+    word-wrap: break-word;
+    font: 32px AllerBold;
+    color: #232323;
+    margin: 27px 0 0 17px;
+    text-decoration: none;
+}
+#content h2 {
+    font: 28px AllerBold;
+    color: #232323;
+}
+#content h2.erro_de_busca{
+    font: 20px AllerBold;
+    color: #888888;
+    margin-bottom: 300px;
+}
+.info_post{
+    height: 49px;
+    margin: 33px 0 0 17px;
+}
+/* Fim das Classes */
+
+/* Início do Rodapé */
+#rodape{
+    background: #232323;
+    width: 100%;
+    height: 168px;
+    float: left;
+    color: #FFFFFF;
+    font: 16px dbold;
+}
+#social_b{
+    width: 230px;
+    height: 70px;
+    margin: 40px 25px 0 0;
+    float: left;
+}
+.redes{
+    margin-top: 5px;
+}
+.redes a svg{
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-left: 24px;
+}
+.redes a svg path{
+    fill: #FFFFFF;
+    fill-opacity: 1;
+    stroke-width: 0.2px;
+    stroke-linejoin: round;
+}
+.redes a svg:active path{
+    fill: #C74D4D;
+}
+#informacoes{
+    height: 70px;
+    width: 265px;
+    float: left;
+    margin: 40px 15px 0 0;
+}
+.links{
+    font: 10px Arial;
+    margin-top: 10px;
+}
+.links ul li{
+    display: inline;
+    border-right: 1px solid #FFFFFF;
+    padding: 5px;
+}
+#informacoes a{
+    color: #FFFFFF;
+    font: 10px dbold;
+}
+#logo_b{
+    float: right;
+    height: 112px;
+    width: 325px;
+    background: url('img/logoCinza.png') no-repeat;
+    margin-top: 25px;
+}
+/* Fim do Rodapé */
+
+#copyright{
+    height: 115px;
+    width: 100%;
+    text-align: center;
+    font: 12px AllerRegular;
+    color: #9397A1;
+    margin-top: 60px;
+    float: left;
+}
+.twitter-share-button{
+    width: 100px;
+}

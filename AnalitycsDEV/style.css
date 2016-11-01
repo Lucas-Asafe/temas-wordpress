@@ -1,0 +1,251 @@
+/*
+Theme Name: AnalitycsDEVTheme
+Theme URI: http://analiticsdev.systems
+Description: "Esse é um tema simples com design eficiente, intuítivo e responsivo"
+Author: Lucas Guimarães
+Author URI: ...
+Version: 1.0
+Tags: Green, slides e images
+*/
+/*
+#8BC54D verde claro
+#103E3A verde escuro
+*/
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+#empacotador_topo{
+    height: 150px;
+    width: 100%;
+}
+#topo{
+    height: 100%;
+    width: 1366px;
+    position: relative;
+    background-color: white;
+    margin: 0 auto;
+}
+#logo_topo{
+    position: absolute;
+    float: left;
+    text-align: left;
+    margin-left: 50px;
+}
+#logo_topo img{
+    height: 150px;
+    width: 450px;
+}
+#menu_topo{
+    position: absolute;
+    right: 50px;
+    height: 150px;
+    width: auto;
+    text-align: center;
+    line-height: 150px;
+}
+#menu_topo a{
+    position: relative;
+    display: inline-block;
+    height: 150px;
+    width: auto;
+    padding: 0 20px;
+    color: black;
+    text-decoration: none;
+}
+#menu_topo a:hover{
+    color: white;
+    background-color: #103E3A;
+}
+#menu_topo a:hover, #menu_topo a{
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+.divisoria_green{
+    height: 5px;
+    width: 100%;
+    background-color: #103E3A;
+}
+#empacotador_conteudo{
+    height: auto;
+    width: 100%;
+}
+.container_slide{
+    height: 450px;
+    width: 100%;
+    color: black;
+    background-color: white;
+}
+.container_slide svg{
+    position: absolute;
+    height: 450px;
+    width: 100px;
+    fill: #8BC54D;
+}
+.container_slide svg:first-child{
+    margin-left: 2.5%;
+}
+.container_slide svg:last-of-type{
+    margin-left: 90%;
+}
+.container_slide svg path{
+    position: absolute;
+    border-radius: 50%;
+    fill: #8BC54D;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.container_slide svg path:hover{
+    fill: #5BC54D; 
+}
+.container_slide svg path:hover, .container_slide svg path{
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.container_slide img{
+    height: 100%;
+    width: 100%;
+}
+.container_white{
+    height: 400px;
+    width: 100%;
+    color: black;
+    background-color: white;
+}
+.container_green{
+    height: 250px;
+    width: 100%;
+    color: white;
+    background-color: #103E3A;
+    padding: 30px 30px;
+}
+.container_green_footer{
+    height: 230px;
+    width: 100%;
+    color: white;
+    background-color: #103E3A;
+    padding: 30px 30px;
+}
+.container_buttons{
+    height: 450px;
+    width: 1366px;
+    color: black;
+    background-color: white;
+    margin: 0 auto;
+    padding: 50px 10px;
+}
+.round_button{
+    position: relative;
+    align-content: center;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 5px solid #103E3A;
+    margin: 0 auto;
+}
+.round_button:hover{
+    color: white;
+    background-color: #103E3A;
+}
+.round_button:hover, .round_button{ 
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.container_text{
+    position: relative;
+    height: 200px;
+    width: 250px;
+    margin-top: 5px;
+    
+    text-align: center;
+    font-size: 18px;
+    color: #103E3A;
+}
+.container_text_footer{
+    display: inline-block;
+    position: relative;
+    height: 150px;
+    width: 250px;
+    
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+#container_links_sociais_footer{
+    float: right;
+    position: relative;
+    height: auto;
+    width: auto;
+    top: 100px;
+}
+#container_links_sociais_footer svg{
+    width: 80px;
+    height: 80px;
+    fill: #FFFFFF;
+    cursor: pointer;
+}
+#container_links_sociais_footer svg path{
+    fill: #FFFFFF;
+    fill-opacity: 1;
+    stroke-width: 0.2;
+    stroke-linejoin: round;
+}
+#container_links_sociais_footer .facebook-box:hover path{
+    fill: #8BC54D;
+}
+#container_links_sociais_footer .twitter-box:hover path{
+    fill: #8BC54D;
+}
+#container_links_sociais_footer .linkedin-box:hover path{
+    fill: #8BC54D;
+}
+.box_menu{
+    float: left;
+    height: auto;
+    width: 19%;
+    margin: 20px 40px; 
+}
+.round_button svg{
+    position: relative;
+    width:90px;
+    height:90px;
+    margin: 40px;
+}
+.drupal path{
+   fill: #103E3A;
+}
+.round_button:hover .drupal path{
+   fill: #FFFFFF;
+}
+.html5 path{
+   fill: #103E3A; 
+}
+.round_button:hover .html5 path{
+    fill: #FFFFFF;
+}
+.code-tags path{
+   fill: #103E3A; 
+}
+.round_button:hover .code-tags path{
+    fill: #FFFFFF;
+}
+.settings path{
+   fill: #103E3A;
+}
+.round_button:hover .settings path{
+    fill: #FFFFFF;
+}
+
